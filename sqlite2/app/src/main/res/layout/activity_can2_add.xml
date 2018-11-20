@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/background_login_div_bg"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/tv_regist_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="添加菜品"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/add_dishname_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_regist_title"
+            android:layout_marginTop="10dp"
+            android:text="菜品名称"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_dishname_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_dishname_tx"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_style"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/add_dishcalorie_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_dishname_edit"
+            android:layout_marginTop="10dp"
+            android:text="菜品卡路里"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_dishcalorie_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_dishcalorie_tx"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_style"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/add_dishprice_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_dishcalorie_edit"
+            android:layout_marginTop="10dp"
+            android:text="菜品价格"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_dishprice_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_dishprice_tx"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_style"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/back"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_dishprice_edit"
+            android:layout_toRightOf="@+id/img_regist_back"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="返回"/>
+
+        <TextView
+            android:id="@+id/confirm"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/add_dishprice_edit"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="确认" />
+    </RelativeLayout>
+
+</LinearLayout>

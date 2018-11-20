@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nuaa233.sqlite">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_test"
+        android:label="南航菜根坛"
+        android:roundIcon="@mipmap/ic_test"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.MainActivity" />
+        <activity
+            android:name=".Login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".TrueMainActivity" />
+        <activity android:name=".About.CheckUpdateActivity" />
+        <activity android:name=".Login.RegisterActivity" />
+        <activity android:name=".Usr_Info.ChangeUsrInfoActivity" />
+        <activity android:name=".Usr_Info.UsrInfoActivity" />
+        <activity android:name=".Disscussion.AddActivity" />
+        <activity android:name=".Main.ShuoShuoActivity" />
+        <activity android:name=".Disscussion.MyPush.MyPushActivity" />
+        <activity android:name=".Disscussion.Mine.MyInfoActivity" />
+        <activity android:name=".Disscussion.Mine.MyTucaoActivity" />
+        <activity android:name=".Disscussion.Mine.AboutUsActivity" />
+        <activity android:name=".Disscussion.newItem.UserInfoActivity" />
+        <activity android:name=".Disscussion.MyFollow.MyFollowActivity" />
+        <activity android:name=".Main.CanteenActivity" />
+        <activity android:name=".Canteen.Canteen1.Can1AddActivity" />
+        <activity android:name=".Canteen.Canteen2.Can2AddActivity" />
+        <activity android:name=".Favorite.MyFavActivity" />
+        <activity android:name=".Canteen.Canteen3.Can3AddActivity" />
+        <activity android:name=".Login.LinkActivity" />
+        <activity android:name=".Usr_Info.ChangeUsrIconActivity"></activity>
+    </application>
+
+</manifest>
